@@ -1,0 +1,45 @@
+.header {
+    background: rgba(16, 16, 29, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    overflow-y: hidden;
+
+    &__container {
+        padding-top: 36px;
+        padding-bottom: 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-descr {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: calc(32.87 / 28);
+        color: #fff;
+        transition: color .4s ease-in-out;
+    }
+
+    &__logo-descr .bold-text {
+        transition: color .4s ease-in-out;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 60px;
+    }
+}
+
+.item-href {
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: calc(15.6 / 13);
+    transition: color .4s ease-in-out;
+}

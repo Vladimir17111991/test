@@ -1,0 +1,70 @@
+.about {
+    background-image: url('./../../../assets/img/aboutBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__container {
+        padding-top: 203px;
+        padding-bottom: 202px;
+    }
+
+    &__title {
+        max-width: 780px;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: calc(58.15 / 48);
+        padding-top: 4px;
+        margin-bottom: 87px;
+    }
+
+    &__info {
+        margin-bottom: 78px;
+    }
+
+    &__description {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        padding-left: 26px;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item::before {
+        content: '-';
+        position: absolute;
+        left: -15px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    &__item-text {
+        color: #000;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.2em;
+    }
+
+    &__button-order {
+        margin-right: 27px;
+        width: 183px;
+    }
+
+    &__button-more {
+        background: #fff;
+        border: 1px solid #6f6d7b;
+        width: 183px;
+        transition: all .4s ease-in-out;
+    }
+}

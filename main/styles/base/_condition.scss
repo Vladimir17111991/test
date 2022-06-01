@@ -1,0 +1,58 @@
+.item-href:hover {
+    color: #42a9ed;
+}
+.form-control:hover::placeholder {
+    color: #42A9ED;
+    opacity: .8;
+}
+.header {
+    &__logo:hover &__logo-descr {
+        color: #42a9ed;
+    }
+
+    &__logo:hover .bold-text {
+        color: #fff;
+    }
+}
+
+.btn:hover {
+    transform: scaleX(110%);
+    border-color: #42a9ed;
+    transition: all .4s ease-in-out;
+}
+.about__button-more:hover{
+    transform: scaleX(110%);
+    // background: radial-gradient(100% 215.42% at 0% 0%, #fff 0%, #42a9ed 100%);
+    // background: linear-gradient(#fff, #42a9ed);
+    // background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    border-color: #42a9ed;
+    transition: all .4s ease-in-out;
+}
+
+.order{
+    &__form-item &__form-file-label:hover{
+        color: #42a9ed;
+    }
+    &__form-item &__form-file-label:hover &__form-file-icon path{
+        fill: #42a9ed
+    }
+    &__form-select-button:hover {
+        color: #3e9cdc;
+    }
+    &__form-select-button:hover+&__form-select-button-icon {
+        color: #42A9ED;
+    }
+    &__drop-href:hover,
+    &__drop-href:focus {
+        color: #42A9ED;
+    }
+
+}
+
+.footer{
+    &__contacts-link:hover{
+        color: #42a9ed;
+        border-bottom: 1px solid #42a9ed;
+    }
+}
+

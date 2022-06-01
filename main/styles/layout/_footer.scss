@@ -1,0 +1,112 @@
+.footer {
+    background: #3d4050;
+
+    &__container {
+        padding-top: 32px;
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+
+        color: #fff;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+
+    &__pay-list {
+        display: flex;
+        justify-content: space-between;
+        border-left: 1px solid #C3C3C3;
+        border-right: 1px solid #C3C3C3;
+        margin-right: 10px;
+        padding: 0 42px;
+        max-width: 475px;
+        width: 100%;
+    }
+
+    &__pay-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__pay-descr {
+
+        display: flex;
+        align-items: center;
+        color: #C3C3C3;
+    }
+
+    &__pay-descr::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding-right: 30px;
+    }
+
+    //footer-contacts
+
+    &__contacts-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 310px;
+        width: 100%;
+    }
+
+    &__contacts-item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__contacts-link {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        border-bottom: 1px solid transparent;
+        transition: all .4s ease-in-out;
+    }
+
+    &__contacts-link::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+}
+
+.pay-qiwi::before {
+    background-image: url('./../../../assets/icons/qiwiWallet.svg');
+    background-repeat: no-repeat;
+}
+
+.pay-yandex::before {
+    background-image: url('./../../../assets/icons/yandexMoney.svg');
+    background-repeat: no-repeat;
+}
+
+.pay-web::before {
+    background-image: url('./../../../assets/icons/webMoney.svg');
+    background-repeat: no-repeat;
+}
+
+.contacts-mail::before {
+    background-image: url('./../../../assets/icons/email.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.contacts-vk::before {
+    background-image: url('./../../../assets/icons/vk.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: calc(15.6 / 13);
+}
