@@ -2313,28 +2313,28 @@ input[type="range"]::-ms-thumb {
 }
 
 .pay-qiwi::before {
-  background-image: url("./../../../assets/icons/qiwiWallet.svg");
+  background-image: url("./../../assets/icons/qiwiWallet.svg");
   background-repeat: no-repeat;
 }
 
 .pay-yandex::before {
-  background-image: url("./../../../assets/icons/yandexMoney.svg");
+  background-image: url("./../../assets/icons/yandexMoney.svg");
   background-repeat: no-repeat;
 }
 
 .pay-web::before {
-  background-image: url("./../../../assets/icons/webMoney.svg");
+  background-image: url("./../../assets/icons/webMoney.svg");
   background-repeat: no-repeat;
 }
 
 .contacts-mail::before {
-  background-image: url("./../../../assets/icons/email.svg");
+  background-image: url("./../../assets/icons/email.svg");
   background-repeat: no-repeat;
   background-position: center left;
 }
 
 .contacts-vk::before {
-  background-image: url("./../../../assets/icons/vk.svg");
+  background-image: url("./../../assets/icons/vk.svg");
   background-repeat: no-repeat;
   background-position: center left;
 }
