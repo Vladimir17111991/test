@@ -1,30 +1,71 @@
+@import "./../abstract/variables";
+@import "./../abstract/mixins";
 .footer {
     background: #3d4050;
 
     &__container {
         padding-top: 32px;
         padding-bottom: 30px;
-        display: flex;
-        align-items: center;
+        @include alignmentFlex;
         justify-content: space-between;
+
+        @media (max-width: 1240px) {
+            display: grid;
+            grid-template-columns: 3fr 2fr 1fr;
+            @media (min-width: 768px) and (max-width: 1240px) {
+                grid-template:
+                    "spanText spanText spanText spanText" 40%
+                    "listPay listPay listContacts listContacts" auto;
+                justify-content: center;
+            }
+            @media (max-width: 767px) {
+                justify-content: center;
+                grid-template:
+                    "spanText spanText spanText" 40%
+                    "listPay listPay listPay" auto
+                    "listContacts listContacts listContacts" auto;
+            }
+        }
     }
 
     &__copyright {
-
-        color: #fff;
+        grid-area: spanText;
+        color: $colorWhite;
         margin-right: 10px;
         box-sizing: border-box;
+
+        @media (max-width: 1240px) {
+            margin-right: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
     }
 
     &__pay-list {
         display: flex;
+        grid-area: listPay;
         justify-content: space-between;
-        border-left: 1px solid #C3C3C3;
-        border-right: 1px solid #C3C3C3;
+        border-left: 1px solid #c3c3c3;
+        border-right: 1px solid #c3c3c3;
         margin-right: 10px;
         padding: 0 42px;
         max-width: 475px;
         width: 100%;
+
+        @media (max-width: 1240px) {
+            border-left: none;
+            padding-left: 0;
+            max-width: 600px;
+
+            @media (max-width: 767px) {
+                border-right: none;
+                padding-right: 0;
+                margin-bottom: 15px;
+            }
+            @media (max-width: 575px) {
+                margin-bottom: 15px;
+            }
+        }
     }
 
     &__pay-item:not(:last-child) {
@@ -32,10 +73,8 @@
     }
 
     &__pay-descr {
-
-        display: flex;
-        align-items: center;
-        color: #C3C3C3;
+        @include alignmentFlex;
+        color: #c3c3c3;
     }
 
     &__pay-descr::before {
@@ -49,10 +88,19 @@
     //footer-contacts
 
     &__contacts-list {
+        grid-area: listContacts;
         display: flex;
         justify-content: space-between;
         max-width: 310px;
         width: 100%;
+
+        @media (max-width: 1240px) {
+            padding-left: 40px;
+            max-width: 600px;
+            @media (max-width: 767px) {
+                padding-left: 0;
+            }
+        }
     }
 
     &__contacts-item:not(:last-child) {
@@ -60,11 +108,10 @@
     }
 
     &__contacts-link {
-        display: flex;
-        align-items: center;
-        color: #fff;
+        @include alignmentFlex;
+        color: $colorWhite;
         border-bottom: 1px solid transparent;
-        transition: all .4s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
 
     &__contacts-link::before {
@@ -75,32 +122,31 @@
         padding-right: 30px;
         box-sizing: border-box;
     }
-
 }
 
 .pay-qiwi::before {
-    background-image: url('./../../../assets/icons/qiwiWallet.svg');
+    background-image: url("./../../../assets/icons/qiwiWallet.svg");
     background-repeat: no-repeat;
 }
 
 .pay-yandex::before {
-    background-image: url('./../../../assets/icons/yandexMoney.svg');
+    background-image: url("./../../../assets/icons/yandexMoney.svg");
     background-repeat: no-repeat;
 }
 
 .pay-web::before {
-    background-image: url('./../../../assets/icons/webMoney.svg');
+    background-image: url("./../../../assets/icons/webMoney.svg");
     background-repeat: no-repeat;
 }
 
 .contacts-mail::before {
-    background-image: url('./../../../assets/icons/email.svg');
+    background-image: url("./../../../assets/icons/email.svg");
     background-repeat: no-repeat;
     background-position: center left;
 }
 
 .contacts-vk::before {
-    background-image: url('./../../../assets/icons/vk.svg');
+    background-image: url("./../../../assets/icons/vk.svg");
     background-repeat: no-repeat;
     background-position: center left;
 }
@@ -109,4 +155,5 @@
     font-size: 13px;
     font-weight: 400;
     line-height: calc(15.6 / 13);
+    align-items: end;
 }

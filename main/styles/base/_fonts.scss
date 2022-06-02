@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Lato";
-    src: local("LatoRegular"), url("./../../../assets/fonts/LatoRegular.woff2") format("woff2"), url("./../../../assets/fonts/LatoRegular.woff") format("woff");
+    src: local("LatoRegular"), url("./../../assets/fonts/LatoRegular.woff2") format("woff2"), url("./../../assets/fonts/LatoRegular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,14 +8,14 @@
 
 @font-face {
     font-family: "Lato";
-    src: local("LatoSemibold"), url("./../../../assets/fonts/LatoSemibold.woff2") format("woff2"), url("./../../../assets/fonts/LatoSemibold.woff") format("woff");
+    src: local("LatoSemibold"), url("./../../assets/fonts/LatoSemibold.woff2") format("woff2"), url("./../../assets/fonts/LatoSemibold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: "Lato";
-    src: local("LatoBold"), url("./../../../assets/fonts/LatoBold.woff2") format("woff2"), url("./../../../assets/fonts/LatoBold.woff") format("woff");
+    src: local("LatoBold"), url("./../../assets/fonts/LatoBold.woff2") format("woff2"), url("./../../assets/fonts/LatoBold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;

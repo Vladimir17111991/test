@@ -70,7 +70,7 @@ controller.oninput = () => {
     setProgress(controller.value)
 }
 
-/*---------------------------------------------------для progressbar ------------------------------------------------------------------------*/
+/*---------------------------------------------------для ссылок в header ------------------------------------------------------------------------*/
 const BURGER_LINKS = document.querySelectorAll('.item-href');
 BURGER_LINKS.forEach(function (itemButton) {
     itemButton.addEventListener('click', function (event) {

@@ -62,15 +62,12 @@ img {
     padding: 0 60px;
     width: 100%;
     margin: 0 auto;
-    // @media (min-width: 768px) and (max-width: 1024px){
-    //     padding: 30px;
-    // }
-    // @media (min-width: 576px) and (max-width: 767px){
-    //     padding: 30px 20px;
-    // }
-    // @media (min-width: 320px) and (max-width: 575px){
-    //     padding: 30px 10px;
-    // }
+    @media (min-width: 768px) and (max-width: 1240px){
+        padding: 0 30px;
+    }
+    @media (max-width: 767px){
+        padding: 0 15px;
+    }
 }
 .bold-text{
     color: #42a9ed;
@@ -79,9 +76,33 @@ img {
     color: #43abf0 !important;
 }
 .btn{
-    background-color: #3e9cdc;
-    color: #fff;
-    border: 1px solid #fff ;
+    background-color: $colorLightBlue;
+    color: $colorWhite;
+    border: 1px solid $colorWhite ;
     transform: scaleX(100%);
     transition: all .4s ease-in-out;
+}
+
+
+
+.validation {
+    font-family: 'Lato';
+    border-radius: 10px;
+    background-color: $colorBlack;
+    height: 100%;
+    margin-right: 58px;
+}
+
+.js-validate-error-label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    margin: 0;
+    margin-bottom: 2px;
+    padding: 0;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: calc(14/12);
+    color: #FF5C00;
 }
